@@ -1,12 +1,19 @@
 import React from 'react';
-import { Header } from './components';
+import { Header, UploadForm } from './components';
+import GlobalStyles from './globalStyles';
 
 const App = () => {
-    return ( 
-        <div>
-            <Header />
-            <p>Share a story through images</p>
-        </div>
+    return (
+        <>
+            <GlobalStyles />
+            <div>
+                
+                <Header />
+                <p>Share a story through images</p>
+                <UploadForm />
+            </div>
+        </> 
+        
     );
 }
 
