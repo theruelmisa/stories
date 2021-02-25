@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ProgressBar from '../ProgressBar/ProgressBar';
 
 const UploadForm = () => {
     const [file, setFile] = useState(null);
@@ -27,6 +28,7 @@ const UploadForm = () => {
             <div>
                 { isError && <div> That image is invalid. Choose jpeg or png. </div> }
                 { file && <div> {file.name} </div> }
+                { file && <ProgressBar file={file} setFile={setFile} /> }
             </div>
         </form>
     );
