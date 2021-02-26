@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
+import { Form, FormLabel, FormInput, Feedback, Error } from './UploadForm.elements';
 import ProgressBar from '../ProgressBar/ProgressBar';
+import { IoAddCircleOutline } from 'react-icons/io5'
 
 const UploadForm = () => {
     const [file, setFile] = useState(null);
@@ -23,14 +25,17 @@ const UploadForm = () => {
     console.log(file);
 
     return ( 
-        <form>
-            <input type="file" onChange={handleChange} />
-            <div>
-                { isError && <div> That image is invalid. Choose jpeg or png. </div> }
+        <Form>
+            <FormLabel>
+                <FormInput type="file" onChange={handleChange} />
+                <IoAddCircleOutline />
+            </FormLabel>
+            <Feedback>
+                { isError && <Error> That image is invalid. Choose jpeg or png. </Error> }
                 { file && <div> {file.name} </div> }
                 { file && <ProgressBar file={file} setFile={setFile} /> }
-            </div>
-        </form>
+            </Feedback>
+        </Form>
     );
 }
 

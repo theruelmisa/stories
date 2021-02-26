@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useCallback } from 'react';
+import { Backdrop, ModalImage } from './Modal.elements';
 
 const Modal = ({ selectedImage, setSelectedImage }) => {
     const modalRef = useRef();
@@ -23,9 +24,9 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
     })
 
     return ( 
-        <div className="backdrop" ref={modalRef} onClik={handleCloseModal}>
-            <img src={selectedImage} alt="modal pic" />
-        </div>
+        <Backdrop ref={modalRef} onClick={handleCloseModal}>
+            <ModalImage src={selectedImage} alt="modal pic" />
+        </Backdrop>
     );
 }
 
