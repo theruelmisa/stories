@@ -1,3 +1,4 @@
+import { IoPhonePortrait } from 'react-icons/io5';
 import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
@@ -16,6 +17,13 @@ export const LogoTitle = styled.h1`
     font-weight: 300;
     letter-spacing: .15rem;
     text-transform: uppercase;
+    color: ${ props => 
+        props.season === 'spring' ? 'var(--spring)' : 
+        props.season === 'summer' ? 'var(--summer)' :
+        props.season === 'autumn' ? 'var(--autumn)' :
+        props.season === 'winter' ? 'var(--winter)' :
+        'inherit'
+    };
 
     & > span {
         font-size: clamp(3rem, 3vw, 4rem);

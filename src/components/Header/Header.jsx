@@ -7,10 +7,10 @@ import {
     NavItem 
 } from './Header.elements';
 
-const Header = () => {
+const Header = ({ season }) => {
     return (
         <HeaderContainer>
-            <LogoTitle><span>S</span>tories</LogoTitle>
+            <LogoTitle season={season}><span>S</span>tories</LogoTitle>
             <Nav>
                 <NavMenu>
                     <NavItem>spring</NavItem>
