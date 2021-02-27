@@ -1,7 +1,14 @@
 import styled from 'styled-components';
 
+export const FormContainer = styled.div`
+    grid-column: center-start / center-end;
+    display: flex;
+    justify-content: center;
+    border: 1px solid red;
+    margin-bottom: 3rem;
+`;
+
 export const Form = styled.form`
-    margin: 3rem auto 1rem;
     text-align: center;
 `;
 

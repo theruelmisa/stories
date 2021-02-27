@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Header, UploadForm, Gallery, Modal } from './components';
-import GlobalStyles from './globalStyles';
+import GlobalStyles, { MainGrid } from './globalStyles';
 
 const App = () => {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -10,14 +10,13 @@ const App = () => {
     return (
         <>
             <GlobalStyles />
-            <div>
+            <MainGrid>
                 
                 <Header />
-                <p>Share a story through images</p>
                 <UploadForm />
                 <Gallery setSelectedImage={setSelectedImage} />
                 { selectedImage && <Modal selectedImage={selectedImage} setSelectedImage={setSelectedImage} /> }
-            </div>
+            </MainGrid>
         </> 
         
     );

@@ -1,10 +1,25 @@
 import React from 'react'
+import { 
+    HeaderContainer, 
+    LogoTitle, 
+    Nav, 
+    NavMenu, 
+    NavItem 
+} from './Header.elements';
 
 const Header = () => {
     return (
-        <header>
-            <h1>Stories</h1>
-        </header>
+        <HeaderContainer>
+            <LogoTitle><span>S</span>tories</LogoTitle>
+            <Nav>
+                <NavMenu>
+                    <NavItem>Spring</NavItem>
+                    <NavItem>Summer</NavItem>
+                    <NavItem>Winter</NavItem>
+                    <NavItem>Fall</NavItem>
+                </NavMenu>
+            </Nav>
+        </HeaderContainer>
     )
 }
 
