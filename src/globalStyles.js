@@ -5,12 +5,17 @@ const GlobalStyles = createGlobalStyle`
     
     :root {
         // Add Colors
+        --red: #e63946;
 
-        // Add Shadows
+        --spring: #7fb685;
+        --summer: #f48c06;
+        --autumn: #dda15e;
+        --winter: #ada7c9;
 
-        // Add layout sizing
-
-        // Add font-sizing?
+        --black: #222725;
+        --white: #f0efeb;
+        --grey-1: #7e8287;
+        --grey-2: #48565f;
     }
 
     *,
@@ -29,6 +34,8 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Poppins', sans-serif;
         line-height: 1.5;
         font-weight: 400;
+        background: var(--white);
+        color: var(--black);
     }
 
     a {
@@ -43,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
 
 export const MainGrid = styled.div`
     display: grid;
-    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+    grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
 `;
 
 export default GlobalStyles;

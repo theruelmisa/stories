@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
     FormContainer, 
-    Form, 
+    Headline,
     FormLabel, 
     FormInput, 
     Feedback, 
@@ -33,19 +33,18 @@ const UploadForm = () => {
 
     return ( 
         <FormContainer> 
-            <p>Share a story through images</p>
-            <Form>
-                
+            <Headline>Share your seasonal stories through images</Headline>
+            <form>
                 <FormLabel>
                     <FormInput type="file" onChange={handleChange} />
                     <IoAddCircleOutline />
                 </FormLabel>
                 <Feedback>
-                    { isError && <Error> That image is invalid. Choose jpeg or png. </Error> }
+                    { isError && <Error> Invalid format. Choose jpeg or png. </Error> }
                     { file && <div> {file.name} </div> }
                     { file && <ProgressBar file={file} setFile={setFile} /> }
                 </Feedback>
-            </Form>
+            </form>
         </FormContainer>
     );
 }

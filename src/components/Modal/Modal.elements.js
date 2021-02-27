@@ -17,5 +17,5 @@ export const ModalImage = styled.img`
     max-height: 80%;
     margin: 6rem auto;
     box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.25);
-    border: 1rem solid #fafafa;
+    border: 1rem solid var(--white);
 `;

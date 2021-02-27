@@ -13,10 +13,10 @@ const Header = () => {
             <LogoTitle><span>S</span>tories</LogoTitle>
             <Nav>
                 <NavMenu>
-                    <NavItem>Spring</NavItem>
-                    <NavItem>Summer</NavItem>
-                    <NavItem>Winter</NavItem>
-                    <NavItem>Fall</NavItem>
+                    <NavItem>spring</NavItem>
+                    <NavItem>summer</NavItem>
+                    <NavItem>autumn</NavItem>
+                    <NavItem>winter</NavItem>
                 </NavMenu>
             </Nav>
         </HeaderContainer>

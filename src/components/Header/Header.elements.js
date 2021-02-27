@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     grid-column: center-start / center-end;
-    height: 8rem;
-    margin-bottom: 3rem;
+    height: 6rem;
+    margin-bottom: 10rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
