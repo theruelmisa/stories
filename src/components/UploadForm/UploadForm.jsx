@@ -10,7 +10,7 @@ import {
 import ProgressBar from '../ProgressBar/ProgressBar';
 import { IoAddCircleOutline } from 'react-icons/io5'
 
-const UploadForm = () => {
+const UploadForm = ({ season }) => {
     const [file, setFile] = useState(null);
     const [isError, setIsError] = useState(false);
 
@@ -29,8 +29,6 @@ const UploadForm = () => {
         }
     }
 
-    console.log(file);
-
     return ( 
         <FormContainer> 
             <Headline>Share your seasonal stories through images</Headline>
@@ -42,7 +40,7 @@ const UploadForm = () => {
                 <Feedback>
                     { isError && <Error> Invalid format. Choose jpeg or png. </Error> }
                     { file && <div> {file.name} </div> }
-                    { file && <ProgressBar file={file} setFile={setFile} /> }
+                    { file && <ProgressBar file={file} setFile={setFile} season={season}/> }
                 </Feedback>
             </form>
         </FormContainer>

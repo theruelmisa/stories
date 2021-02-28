@@ -14,7 +14,7 @@ const GlobalStyles = createGlobalStyle`
 
         --black: #222725;
         --white: #f0efeb;
-        --grey-1: #7e8287;
+        --grey-1: #cecece;
         --grey-2: #48565f;
     }
 
