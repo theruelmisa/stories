@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27bdcda4-f83f-42b1-8950-ceb809498907/deploy-status)](https://app.netlify.com/sites/seasonedstories/deploys)
 
-**Stories** is an instagram/tumblr -ish clone built with react and firebase.
+**Stories** is an instagram/tumblr -ish clone built with react and firebase. _This is just an MVP and project is currently ongoing. Suggestions are welcomed!_
 
 ## Table of Contents
 
