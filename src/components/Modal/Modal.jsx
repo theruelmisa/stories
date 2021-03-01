@@ -24,8 +24,19 @@ const Modal = ({ selectedImage, setSelectedImage }) => {
     })
 
     return ( 
-        <Backdrop ref={modalRef} onClick={handleCloseModal}>
-            <ModalImage src={selectedImage} alt="modal pic" />
+        <Backdrop 
+            ref={modalRef} 
+            onClick={handleCloseModal} 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+        >
+        <ModalImage 
+            src={selectedImage} 
+            alt="modal pic"
+            initial={{ y:"100vh" }}
+            animate={{ y: 0 }}
+            transition={{ delay: .2 }}
+        />
         </Backdrop>
     );
 }

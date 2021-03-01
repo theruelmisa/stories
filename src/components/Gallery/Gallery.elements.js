@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const ImageGrid = styled.div`
+
+export const ImageGrid = styled(motion.div)`
     grid-column: center-start / center-end;
 
     display: grid;
@@ -8,19 +10,15 @@ export const ImageGrid = styled.div`
     grid-gap: 2rem;
 `;
 
-export const ImageBox = styled.div`
+export const ImageBox = styled(motion.div)`
     overflow: hidden;
     height: 0;
     padding: 50% 0;
     position: relative;
-    opacity: 0.75;
-
-    &:hover {
-        opacity: 1;
-    }
+    opacity: 0.70;
 `;
 
-export const Image = styled.img`
+export const Image = styled(motion.img)`
     cursor: pointer;
     min-width: 100%;
     min-height: 100%;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Backdrop = styled.div`
+export const Backdrop = styled(motion.div)`
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +13,7 @@ export const Backdrop = styled.div`
 
 
 
-export const ModalImage = styled.img`
+export const ModalImage = styled(motion.img)`
     display: block;
     max-width: 60%;
     max-height: 80%;

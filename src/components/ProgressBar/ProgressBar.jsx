@@ -12,7 +12,10 @@ const Progressbar = ({ file, setFile }) => {
     }, [url, setFile])
 
     return (  
-        <Bar width={progress} />
+        <Bar 
+            initial={{ width: 0}}
+            animate={{ width: `${progress}%` }}
+        />
     );
 }
 
