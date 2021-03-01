@@ -25,7 +25,8 @@ https://seasonedstories.netlify.app/
 
 The following technologies were used to accomplish this project:
 
-- React
+- ReactJS
+- CSS via Styled Components
 - Firebase
 
 ### Components
