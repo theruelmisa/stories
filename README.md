@@ -48,7 +48,7 @@ The following technologies were used to accomplish this project:
 
 ## Credits
 
-** Photos **
+**Photos**
 
 Some of the photos are my own. Others come from saved unsplash photos from the following photographers:
 
